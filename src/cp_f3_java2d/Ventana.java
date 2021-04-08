@@ -5,20 +5,37 @@
  */
 package cp_f3_java2d;
 
+import java.awt.BasicStroke;
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.GridLayout;
+import java.awt.Stroke;
+import java.awt.geom.Line2D;
+
 /**
  *
  * @author PC
  */
 public class Ventana extends javax.swing.JFrame {
+    
+    public Lineas lineas;
 
     /**
      * Creates new form Ventana
      */
+        
     public Ventana() {
         initComponents();
         setTitle("Andres Mauricio Acelas Arevalo - Cod. 1052412239");
-        setSize(400, 400);
+        setSize(800, 800);
         setResizable(true);
+        setLayout(new GridLayout(1, 1));
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setLocationRelativeTo(null);
+        
+        lineas = new Lineas();
+        add(lineas);
     }
 
     /**
@@ -29,6 +46,10 @@ public class Ventana extends javax.swing.JFrame {
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
+
+        jButton1 = new javax.swing.JButton();
+
+        jButton1.setText("jButton1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -82,5 +103,6 @@ public class Ventana extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     // End of variables declaration//GEN-END:variables
 }

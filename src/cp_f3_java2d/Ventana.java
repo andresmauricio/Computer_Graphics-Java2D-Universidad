@@ -20,6 +20,8 @@ import java.awt.geom.Line2D;
 public class Ventana extends javax.swing.JFrame {
     
     public Lineas lineas;
+    public Circulos circulos;
+
 
     /**
      * Creates new form Ventana
@@ -35,7 +37,8 @@ public class Ventana extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         
         lineas = new Lineas();
-        add(lineas);
+        circulos = new Circulos();
+        add(circulos);
     }
 
     /**

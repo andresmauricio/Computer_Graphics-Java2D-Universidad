@@ -9,6 +9,7 @@ import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
+import java.awt.Polygon;
 import java.awt.Stroke;
 import java.awt.geom.Arc2D;
 import java.awt.geom.Ellipse2D;
@@ -30,7 +31,7 @@ public class Poligonos extends javax.swing.JPanel {
     
      public void paint(Graphics g) {
         
-        Graphics2D g2 = (Graphics2D)g;
+        super.paint(g);
         
         // Dibujar borde de la cara
         Line2D l1 = new Line2D.Double(150, 50, 170, 70);  
@@ -40,46 +41,63 @@ public class Poligonos extends javax.swing.JPanel {
         
         // Cuerpo
         Ellipse2D body1 = new Ellipse2D.Double(255, 320, 100, 100);
-        Ellipse2D body2 = new Ellipse2D.Double(255, 420, 100, 100);
-        Ellipse2D body3 = new Ellipse2D.Double(255, 520, 100, 100);
-        Ellipse2D body4 = new Ellipse2D.Double(255, 620, 100, 100);
-        Ellipse2D body5 = new Ellipse2D.Double(255, 720, 100, 100);
         
-        // Antenas
-        Ellipse2D ant1 = new Ellipse2D.Double(100, 55, 75, 75);
-        Ellipse2D ant2 = new Ellipse2D.Double(420, 55, 75, 75);
+        // Gato
+        int xValues3[] = { 150, 170, 150 };
+        int yValues3[] = { 20, 40, 60 }; 
+        // El Ultimo valor es la cantidad de puntos
+        Polygon polygon1 = new Polygon(xValues3, yValues3, 3);
         
-        // Conexión Antenas
-        Arc2D arc = new Arc2D.Double(23, 70, 250, 200, 0, 90, Arc2D.OPEN);
-        Arc2D arc2 = new Arc2D.Double(320, 70, 250, 200, 90, 90, Arc2D.OPEN);
         
-        // Alas
-        Arc2D arc3 = new Arc2D.Double(350, 350, 250, 200, 90, 360, Arc2D.CHORD);
-        Arc2D arc4 = new Arc2D.Double(350, 570, 250, 200, 90, 360, Arc2D.CHORD);
+        // Imagen de la izquierda triangulos 
+        int tri1X[] = { 30, 110, 70 };
+        int tr11Y[] = { 90, 90, 130 }; 
+        Polygon tiangle1 = new Polygon(tri1X, tr11Y, 3);
         
-        Arc2D arc5 = new Arc2D.Double(10, 350, 250, 200, 90, 360, Arc2D.CHORD);
-        Arc2D arc6 = new Arc2D.Double(10, 570, 250, 200, 90, 360, Arc2D.CHORD);
-              
-        Stroke pincel = new BasicStroke(3.0f);
-        g2.setStroke(pincel);
+        int tri2X[] = { 30, 50, 30 };
+        int tr12Y[] = { 90, 110, 130 }; 
+        Polygon tiangle2 = new Polygon(tri2X, tr12Y, 3);
         
-        g2.setColor(Color.PINK);
+        int tri3X[] = { 30, 70, 30 };
+        int tr13Y[] = { 130, 170, 170 }; 
+        Polygon tiangle3 = new Polygon(tri3X, tr13Y, 3);
+        
+        int tri4X[] = { 50, 90, 110, 70 };
+        int tr14Y[] = { 150, 150, 170, 170 }; 
+        Polygon tiangle4 = new Polygon(tri4X, tr14Y, 4);
+        
+                
+        int tri5X[] = { 110, 110, 70 };
+        int tr15Y[] = { 90, 170, 130 }; 
+        Polygon tiangle5 = new Polygon(tri5X, tr15Y, 3);
+        
+                        
+        int tri6X[] = { 70, 90, 50 };
+        int tr16Y[] = { 130, 150, 150 }; 
+        Polygon tiangle6 = new Polygon(tri6X, tr16Y, 3);
+        
+        int tri7X[] = { 50, 70, 50, 30 };
+        int tr17Y[] = { 110, 130, 150, 130 }; 
+        Polygon tiangle7 = new Polygon(tri7X, tr17Y, 4);
+        
+        
+  
+            
+        // Stroke pincel = new BasicStroke(3.0f);
+        //g.setStroke(pincel);
+        
+        g.setColor(Color.DARK_GRAY);
         
         // Dibujar
-        g2.draw(head);
-        g2.draw(body1);
-        g2.draw(body2);
-        g2.draw(body3);
-        g2.draw(body4);
-        g2.draw(body5);
-        g2.draw(ant1);
-        g2.draw(ant2);
-        g2.draw(arc);
-        g2.draw(arc2);
-        g2.draw(arc3);
-        g2.draw(arc4);
-        g2.draw(arc5);
-        g2.draw(arc6);
+        g.drawPolygon(polygon1);
+        g.drawPolygon(tiangle1);
+        g.drawPolygon(tiangle2);
+        g.drawPolygon(tiangle3);
+        g.drawPolygon(tiangle4);
+        g.drawPolygon(tiangle5);
+        g.drawPolygon(tiangle6);
+        g.drawPolygon(tiangle7);
+
         
     }
 

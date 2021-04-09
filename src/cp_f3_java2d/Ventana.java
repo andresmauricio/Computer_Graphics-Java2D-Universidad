@@ -21,6 +21,7 @@ public class Ventana extends javax.swing.JFrame {
     
     public Lineas lineas;
     public Circulos circulos;
+    public Poligonos poligonos;
 
 
     /**
@@ -37,8 +38,10 @@ public class Ventana extends javax.swing.JFrame {
         setLocationRelativeTo(null);
         
         lineas = new Lineas();
-        circulos = new Circulos();
-        add(circulos);
+        circulos = new Circulos();  
+        poligonos = new Poligonos();
+
+        add(poligonos);
     }
 
     /**

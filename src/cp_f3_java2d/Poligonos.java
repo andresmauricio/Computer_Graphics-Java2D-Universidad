@@ -34,33 +34,47 @@ public class Poligonos extends javax.swing.JPanel {
         super.paint(g);
                 
         // Gato
+        g.setColor(Color.YELLOW);
         int cat1X[] = { 150, 170, 150 };
         int cat1Y[] = { 20, 40, 60 }; 
         Polygon cat1 = new Polygon(cat1X, cat1Y, 3);
+        g.fillPolygon(cat1);
         
+        g.setColor(Color.PINK);
         int cat2X[] = { 190, 170, 190 };
         int cat2Y[] = { 20, 40, 60 }; 
         Polygon cat2 = new Polygon(cat2X, cat2Y, 3);
+        g.fillPolygon(cat2);
         
+        g.setColor(Color.BLUE);
         int cat3X[] = { 170, 190, 170, 150 };
         int cat3Y[] = { 40, 60, 80, 60 }; 
         Polygon cat3 = new Polygon(cat3X, cat3Y, 4);
+        g.fillPolygon(cat3);
         
+        g.setColor(Color.GREEN);
         int cat4X[] = { 180, 180, 150 };
         int cat4Y[] = { 70, 130, 100 }; 
         Polygon cat4 = new Polygon(cat4X, cat4Y, 3);
+        g.fillPolygon(cat4);
         
+        g.setColor(Color.ORANGE);
         int cat5X[] = { 180, 220, 180 };
         int cat5Y[] = { 70, 110, 150 }; 
         Polygon cat5 = new Polygon(cat5X, cat5Y, 3);
+        g.fillPolygon(cat5);
         
+        g.setColor(Color.MAGENTA);
         int cat6X[] = { 210, 210, 160 };
         int cat6Y[] = { 120, 170, 170 }; 
         Polygon cat6 = new Polygon(cat6X, cat6Y, 3);
+        g.fillPolygon(cat6);
         
+        g.setColor(Color.RED);
         int cat7X[] = { 240, 270, 240, 210 };
         int cat7Y[] = { 140, 140, 170, 170 }; 
         Polygon cat7 = new Polygon(cat7X, cat7Y, 4);
+        g.fillPolygon(cat7);
         
         
       

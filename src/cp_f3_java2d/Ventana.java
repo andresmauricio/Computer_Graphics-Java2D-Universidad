@@ -22,7 +22,7 @@ public class Ventana extends javax.swing.JFrame {
     public Lineas lineas;
     public Circulos circulos;
     public Poligonos poligonos;
-
+    public ImagenesAcopladas imagenesAcopladas;
 
     /**
      * Creates new form Ventana
@@ -40,8 +40,9 @@ public class Ventana extends javax.swing.JFrame {
         lineas = new Lineas();
         circulos = new Circulos();  
         poligonos = new Poligonos();
+        imagenesAcopladas = new ImagenesAcopladas();
 
-        add(poligonos);
+        add(imagenesAcopladas);
     }
 
     /**

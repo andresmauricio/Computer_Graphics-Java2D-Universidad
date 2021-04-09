@@ -31,7 +31,7 @@ public class Ventana extends javax.swing.JFrame {
     public Ventana() {
         initComponents();
         setTitle("Andres Mauricio Acelas Arevalo - Cod. 1052412239");
-        setSize(1000, 1000);
+        setSize(700, 700);
         setResizable(true);
         setLayout(new GridLayout(1, 1));
         setDefaultCloseOperation(EXIT_ON_CLOSE);

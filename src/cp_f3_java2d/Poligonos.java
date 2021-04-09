@@ -79,42 +79,50 @@ public class Poligonos extends javax.swing.JPanel {
         
       
         // Imagen de la izquierda triangulos 
+        g.setColor(Color.ORANGE);
         int tri1X[] = { 30, 110, 70 };
         int tr11Y[] = { 90, 90, 130 }; 
         Polygon tiangle1 = new Polygon(tri1X, tr11Y, 3);
+        g.fillPolygon(tiangle1);
         
+        g.setColor(Color.PINK);
         int tri2X[] = { 30, 50, 30 };
         int tr12Y[] = { 90, 110, 130 }; 
         Polygon tiangle2 = new Polygon(tri2X, tr12Y, 3);
+        g.fillPolygon(tiangle2);
         
+        g.setColor(Color.GREEN);
         int tri3X[] = { 30, 70, 30 };
         int tr13Y[] = { 130, 170, 170 }; 
         Polygon tiangle3 = new Polygon(tri3X, tr13Y, 3);
+        g.fillPolygon(tiangle3);
         
+        g.setColor(Color.RED);
         int tri4X[] = { 50, 90, 110, 70 };
         int tr14Y[] = { 150, 150, 170, 170 }; 
         Polygon tiangle4 = new Polygon(tri4X, tr14Y, 4);
+        g.fillPolygon(tiangle4);
         
-                
+        g.setColor(Color.MAGENTA);     
         int tri5X[] = { 110, 110, 70 };
         int tr15Y[] = { 90, 170, 130 }; 
         Polygon tiangle5 = new Polygon(tri5X, tr15Y, 3);
+        g.fillPolygon(tiangle5);
         
-                        
+        g.setColor(Color.YELLOW);           
         int tri6X[] = { 70, 90, 50 };
         int tr16Y[] = { 130, 150, 150 }; 
         Polygon tiangle6 = new Polygon(tri6X, tr16Y, 3);
+        g.fillPolygon(tiangle6);
         
+        g.setColor(Color.BLUE);  
         int tri7X[] = { 50, 70, 50, 30 };
         int tr17Y[] = { 110, 130, 150, 130 }; 
         Polygon tiangle7 = new Polygon(tri7X, tr17Y, 4);
+        g.fillPolygon(tiangle7);
         
         
-  
-            
-        // Stroke pincel = new BasicStroke(3.0f);
-        //g.setStroke(pincel);
-        
+         
         g.setColor(Color.DARK_GRAY);
         
         // Dibujar
